@@ -1,0 +1,34 @@
+apiVersion: radapp.io/v1alpha3
+kind: DeploymentTemplate
+metadata:
+  name: empty.bicep
+spec:
+  parameters: {}
+  providerConfig: |-
+    {
+      "radius": {
+        "type": "Radius",
+        "value": {
+          "scope": "/planes/radius/local/resourceGroups/playground"
+        }
+      },
+      "deployments": {
+        "type": "Microsoft.Resources",
+        "value": {
+          "scope": "/planes/radius/local/resourceGroups/playground"
+        }
+      }
+    }
+  template: |-
+    {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "metadata": {
+        "_generator": {
+          "name": "bicep",
+          "templateHash": "9483363439713304492",
+          "version": "0.46.1.21595"
+        }
+      },
+      "resources": []
+    }
