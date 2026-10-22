@@ -3,7 +3,6 @@ kind: DeploymentTemplate
 metadata:
   name: empty.bicep
 spec:
-  parameters: {}
   providerConfig: |-
     {
       "radius": {
